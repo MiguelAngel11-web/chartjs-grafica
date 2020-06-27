@@ -97,14 +97,7 @@ export class AppComponent {
 	}
 
 	private getFromAPI(): Observable<any>{
-<<<<<<< HEAD
 	  return this.service.consulta();
-=======
-	  return this.http.get(
-		'http://lit-river-61248.herokuapp.com/grafica',
-		{ responseType: 'json' }
-	  );
->>>>>>> 4bfaba91900b36d1360903734147219fac720546
 	}
 
 }
