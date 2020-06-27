@@ -97,7 +97,7 @@ export class AppComponent {
 
 	private getFromAPI(): Observable<any>{
 	  return this.http.get(
-		'https://lit-river-61248.herokuapp.com/grafica',
+		'http://lit-river-61248.herokuapp.com/grafica',
 		{ responseType: 'json' }
 	  );
 	}
