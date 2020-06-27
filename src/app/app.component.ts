@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { Observable } from 'rxjs';
+import { ApiService } from './servicio/api.service';
 import { Chart } from 'chart.js';
 
 @Component({
@@ -19,7 +20,7 @@ export class AppComponent {
 	/**
 	* Constructor
 	*/
-	constructor(private http: HttpClient) {
+	constructor(private service : ApiService) {
 
 	}
 	private ngOnInit(): void {
@@ -96,10 +97,7 @@ export class AppComponent {
 	}
 
 	private getFromAPI(): Observable<any>{
-	  return this.http.get(
-		'https://lit-river-61248.herokuapp.com/grafica',
-		{ responseType: 'json' }
-	  );
+	  return this.service.consulta();
 	}
 
 }
