@@ -28,7 +28,7 @@
     "@types/node": "^12.12.47",
     "codelyzer": "^5.1.2",
     "body-parser": "^1.19.0",
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "express": "^4.17.1",
     "path": "^0.12.7",
     "rxjs": "~6.5.4",
